@@ -116,7 +116,7 @@ def main():
     pltgetonlineimagearray(url)
     #img_array = tfgetimagearray(args.data_path, args.img_height, args.img_width)
 
-    class_names=['daisy', 'dandelion', 'roses', 'sunflowers', 'tulips']
+    class_names=['cat', 'dog']
     inference(model, img_array, class_names)
 
 if __name__ == '__main__':
