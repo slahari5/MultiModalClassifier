@@ -10,7 +10,6 @@ Install this project in development mode
 
 (venv38) MyRepo/MultiModalClassifier$ python setup.py develop
 After the installation, the package "MultimodalClassifier==0.0.1" is installed in your virtual environment. You can check the import
-
 >>> import TFClassifier
 >>> import TFClassifier.Datasetutil
 >>> import TFClassifier.Datasetutil.Visutil
