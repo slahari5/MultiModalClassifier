@@ -28,3 +28,7 @@ TorchClassifier: Pytorch-based classifier
 myTorchTrainer.py: Pytorch main training code
 myTorchEvaluator.py: Pytorch model evaluation code
 
+#Procedure:
+
+Dataset: ASIRRA(animal species image recognition) dataset includes 25,000 images
+
