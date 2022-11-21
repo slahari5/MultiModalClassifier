@@ -108,7 +108,7 @@ def inference(infermodel, img_np, class_names):
 
 def main():
 
-    model=loadsavedmodel(args.model_path)
+    model=loadsavedmodel(/Users/admin/Documents/GitHub/MultiModalClassifier/TFClassifier/outputs/images')
 
     url='https://www.jacksonandperkins.com/images/xxl/v1780.jpg'#rose
     img_array = PILgetonlineimagearray(url, args.img_height, args.img_width)
