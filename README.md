@@ -55,8 +55,11 @@ Took the inference and got prediction on data with a confidence of 99.
 
 For this scenario, I took the Iris dataset and trained a model using tensor flow which classifies the given required fields to classify the image. Front-end is developed with React.Js and written end-points using flask. 
 
+
+https://user-images.githubusercontent.com/99698941/203659670-65571c91-a121-4606-9aae-c76733023511.mp4
+
+
 The model is saved in hdf5 file format. Run the app.py file and use flask as the link between the backend and model file.
 
-https://user-images.githubusercontent.com/99698941/203659372-3403b9a1-f698-434b-83ee-34dde8eff3c6.mp4
 
 
