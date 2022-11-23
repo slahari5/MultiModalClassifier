@@ -138,7 +138,7 @@ def loadimageint(path, img_height, img_width):
     return input_data
 
 if __name__ == '__main__':
-     saved_model_dir = "/content/drive/MyDrive/outputfashionMNIST_cnnsimple1_0629/"
+     saved_model_dir = "/content/drive/MyDrive/sailahari/MultiModalClassifier/model/flower"
     testtfliteexport(saved_model_dir)
 
     tflitequanexport(saved_model_dir)
