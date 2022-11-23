@@ -43,6 +43,9 @@ Trained the model on google colab using the python script
 Trained the model for 25 epochs
 ![image](https://user-images.githubusercontent.com/99698941/203488042-4fc9ac5c-989f-4783-92f6-c09fe7af4b51.png)
 
+![image](https://user-images.githubusercontent.com/99698941/203488983-c85ec4ac-a8fd-4cac-bbd3-ba5985769be3.png)
+![image](https://user-images.githubusercontent.com/99698941/203489019-0c5bc4e4-d838-4e0a-9ccd-3428db36d967.png)
+
 
 Took the inference for val dataset. 
 Got good prediction on val data with a confidence of 99.
