@@ -5,7 +5,7 @@
 Datasets Used:
 * For OpenVino :
 https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz
-* For RestAPIs:
+* For RestAPIs: https://en.wikipedia.org/wiki/Iris_flower_data_set
 
 
 Colab:
