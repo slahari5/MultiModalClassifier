@@ -7,13 +7,6 @@ Datasets Used:
 https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz
 * For RestAPIs: https://en.wikipedia.org/wiki/Iris_flower_data_set
 
-
-Colab:
-https://colab.research.google.com/drive/160AD-r_ylPugdn01Zi2aDrpulTuIWKPC?usp=sharing
-
-Github link:
-https://github.com/slahari5/MultiModalClassifier/tree/main/BonusWork
-
 # 1. Inference using OpenVino 
 
 model_name = "flower"
@@ -31,6 +24,9 @@ mo_command = f"""mo
                  --model_name "{ir_model_name}"
                  """
 mo_command = " ".join(mo_command.split())
+
+Colab:
+https://colab.research.google.com/drive/160AD-r_ylPugdn01Zi2aDrpulTuIWKPC?usp=sharing
 
 Steps :
 Downloaded the dataset of flowers which has 5 differenct species consisting of 3670 samples.
@@ -53,13 +49,19 @@ Took the inference and got prediction on data with a confidence of 99.
 
 # 2. Serving with Rest API
 
-For this scenario, I took the Iris dataset and trained a model using tensor flow which classifies the given required fields to classify the image. Front-end is developed with React.Js and written end-points using flask. 
+For this scenario, I took the Iris dataset and trained a model using tensor flow which classifies the given required fields to classify the image. Front-end is developed with React.Js and written end-points using flask. The model is saved in hdf5 file format. Run the app.py file and use flask as the link between the backend and model file.
+
+
+Colab:
+https://colab.research.google.com/drive/1AIhxZXRWFJI1G7mRt6ZSekjgz5vXKPX-?usp=sharing
+
+Github link:
+https://github.com/slahari5/MultiModalClassifier/tree/main/BonusWork
 
 
 https://user-images.githubusercontent.com/99698941/203659670-65571c91-a121-4606-9aae-c76733023511.mp4
 
 
-The model is saved in hdf5 file format. Run the app.py file and use flask as the link between the backend and model file.
 
 
 
