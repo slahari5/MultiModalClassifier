@@ -12,6 +12,7 @@ Colab:
 https://colab.research.google.com/drive/160AD-r_ylPugdn01Zi2aDrpulTuIWKPC?usp=sharing
 
 Github link:
+https://github.com/slahari5/MultiModalClassifier/tree/main/BonusWork
 
 # 1. Inference using OpenVino 
 
@@ -47,9 +48,10 @@ Trained the model for 25 epochs
 ![image](https://user-images.githubusercontent.com/99698941/203489019-0c5bc4e4-d838-4e0a-9ccd-3428db36d967.png)
 
 
-Took the inference for val dataset. 
-Got good prediction on val data with a confidence of 99.
+Took the inference and got prediction on data with a confidence of 99.
 ![image](https://user-images.githubusercontent.com/99698941/203488485-9702d65a-61d4-4987-923f-e19621fcc4a0.png)
+
+
 
 
 
