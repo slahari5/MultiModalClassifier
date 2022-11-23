@@ -1,33 +1,50 @@
 # Options Selected:
-* OpenVino
-* Rest API
+* Inference using OpenVino
+* Serving with Rest API
 
-MultiModalClassifier
-This is a project repo for multi-modal deep learning classifier with popular models from Tensorflow and Pytorch. The goal of these baseline models is to provide a template to build on and can be a starting point for any new ideas, applications. If you want to learn basics of ML and DL, please refer this repo: https://github.com/lkk688/DeepDataMiningLearning.
+Datasets Used:
+* For OpenVino :
+https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz
+* For RestAPIs:
 
-Package setup
-Install this project in development mode
 
-(venv38) MyRepo/MultiModalClassifier$ python setup.py develop
-After the installation, the package "MultimodalClassifier==0.0.1" is installed in your virtual environment. You can check the import
->>> import TFClassifier
->>> import TFClassifier.Datasetutil
->>> import TFClassifier.Datasetutil.Visutil
+Colab:
+https://colab.research.google.com/drive/160AD-r_ylPugdn01Zi2aDrpulTuIWKPC?usp=sharing
 
-If you went to uninstall the package, perform the following step
+Github link:
 
-(venv38) lkk@cmpeengr276-All-Series:~/Developer/MyRepo/MultiModalClassifier$ python setup.py develop --uninstall
-Code organization
-DatasetTools: common tools and code scripts for processing datasets
-TFClassifier: Tensorflow-based classifier
-myTFDistributedTrainerv2.py: main training code
-myTFInference.py: main inference code
-exportTFlite.py: convert form TF model to TFlite
-TorchClassifier: Pytorch-based classifier
-myTorchTrainer.py: Pytorch main training code
-myTorchEvaluator.py: Pytorch model evaluation code
+# 1. Inference using OpenVino 
 
-#Procedure:
+model_name = "flower"
+model_path = Path(model_fname)
+ir_data_type = "FP16"
+ir_model_name = "flower_ir"
 
-Dataset: ASIRRA(animal species image recognition) dataset includes 25,000 images
+
+Command for Model Optimizer:
+mo_command = f"""mo
+                 --saved_model_dir "{model_fname}"
+                 --input_shape "[1,180,180,3]"
+                 --data_type "{ir_data_type}"
+                 --output_dir "{model_fname}"
+                 --model_name "{ir_model_name}"
+                 """
+mo_command = " ".join(mo_command.split())
+
+Steps :
+Downloaded the dataset of flowers which has 5 differenct species consisting of 3670 samples.
+
+Tensorflow framework has been used to train the dataset.
+
+Loaded the dataset 
+
+Trained the model on google colab using the python script 
+
+Trained the model for 25 epochs
+![image](https://user-images.githubusercontent.com/99698941/203488042-4fc9ac5c-989f-4783-92f6-c09fe7af4b51.png)
+
+
+Took the inference for val dataset. 
+Got good prediction on val data with a confidence of 99.
+![image](https://user-images.githubusercontent.com/99698941/203488186-6b4e0342-b895-4c41-b6f6-d569b2142084.png)
 
