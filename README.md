@@ -46,5 +46,7 @@ Trained the model for 25 epochs
 
 Took the inference for val dataset. 
 Got good prediction on val data with a confidence of 99.
-![image](https://user-images.githubusercontent.com/99698941/203488186-6b4e0342-b895-4c41-b6f6-d569b2142084.png)
+![image](https://user-images.githubusercontent.com/99698941/203488485-9702d65a-61d4-4987-923f-e19621fcc4a0.png)
+
+
 
